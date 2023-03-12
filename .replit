@@ -1,6 +1,8 @@
 entrypoint = "index.js"
 
 hidden = [".config", "package-lock.json"]
+run = "node --enable-source-maps .build/index.js"
+compile = "./.config/build.sh"
 
 [interpreter]
 command = [
