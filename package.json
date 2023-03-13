@@ -1,10 +1,10 @@
 {
   "name": "@rodcordeiro/chatjs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "",
   "main": "bin/src/index.js",
   "bin": {
-    "chat": "bin/src/index.js"
+    "chatjs": "bin/src/index.js"
   },
   "files": [
     "bin/**/*"
@@ -20,7 +20,9 @@
     "terminal",
     "websocket"
   ],
-  "author": "",
+  "author": "Rodrigo Cordeiro <rodrigomendoncca@gmail.com> (https://rodcordeiro.com.br)",
+  "homepage": "https://github.com/rodcordeiro/chat.js",
+  "bugs": "https://github.com/rodcordeiro/chat.js/issues",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
