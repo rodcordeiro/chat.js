@@ -36,7 +36,7 @@ export default class ConfigCommand extends BaseCommand {
       const user = config.get("user.username");
       if (!user) {
         console.error("User not registered!");
-        return;
+        process.exit(1);
       }
       adapter.on("connect", () => {
         const socketId = adapter.id;
@@ -60,7 +60,8 @@ export default class ConfigCommand extends BaseCommand {
     }
   }
   private chat(author: User) {
-    this.reader.question(color.magenta("» "), (answer) => {
+    // this.reader.question("» ", (answer) => {
+    this.reader.question(" ", (answer) => {
       if (!answer || answer === "") return this.chat(author);
       const messageId = new MessageService().dispatch(author, answer);
       this.lastMessageId = messageId;

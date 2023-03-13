@@ -18,7 +18,6 @@ export class MessageService {
 
   render(message: Message, owner = false): void {
     const date = new Date(message.sent).toLocaleTimeString();
-    console.log(date);
     console.log(
       `[${color.greenBright(date)}] ${
         owner
@@ -26,5 +25,6 @@ export class MessageService {
           : color.green(message.author.name)
       }: ${color.cyanBright(message.content)}`
     );
+    process.stdout.write("\u0007");
   }
 }

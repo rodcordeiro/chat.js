@@ -43,6 +43,7 @@ export default class ConfigCommand extends BaseCommand {
 
       config.set("user.username", username);
       console.log(success("Username registered successfully!"));
+      process.exit(0);
     } catch (err) {
       console.error(error(err));
     }
