@@ -7,7 +7,6 @@ import { CommandFactory } from "./utils/CommandFactory";
 import { config } from "dotenv";
 config();
 import "./socket/adapter";
-import "./socket/events";
 
 if (process.env.NODE_ENV !== "development") {
   // @ts-ignore

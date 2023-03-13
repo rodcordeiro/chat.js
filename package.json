@@ -10,6 +10,7 @@
     "bin/**/*"
   ],
   "scripts": {
+    "start": "node bin/src/index.js",
     "build": "tsc -b",
     "dev": "tsx ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -12,7 +12,7 @@ interface Options {
 }
 
 export default class ConfigCommand extends BaseCommand {
-  lastMessageId: string;
+  lastMessageId: string = "";
   private reader: Interface = createInterface({
     input: process.stdin,
     output: process.stdout,
