@@ -1,30 +1,55 @@
 {
-  "name": "nodejs",
-  "version": "1.0.0",
+  "name": "@rodcordeiro/chatjs",
+  "version": "0.0.1",
   "description": "",
   "main": "bin/src/index.js",
   "bin": {
     "chat": "bin/src/index.js"
   },
+  "files": [
+    "bin/**/*"
+  ],
   "scripts": {
     "build": "tsc -b",
-    "dev": "tsx watch ./src/index.ts",
+    "dev": "tsx ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "chat",
-    "cli"
+    "cli",
+    "terminal",
+    "websocket"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "configstore": "^6.0.0",
+    "dotenv": "^16.0.3",
     "inquirer": "^9.1.4",
     "node-fetch": "^3.2.6",
-    "socket.io-client": "^4.6.1"
+    "ora": "^6.1.2",
+    "socket.io-client": "^4.6.1",
+    "update-notifier": "^6.0.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.0.6",
+    "@types/ora": "^3.2.0",
+    "@types/update-notifier": "^6.0.2",
+    "@types/uuid": "^9.0.1",
+    "auto-changelog": "^2.4.0",
+    "rimraf": "^4.4.0",
     "tsx": "^3.12.4",
     "typescript": "^4.9.5"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
   }
 }

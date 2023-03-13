@@ -1,5 +1,6 @@
-import socket from 'socket.io-client'
+import socket from "socket.io-client";
+import config from "../utils/config";
 
-const URL = "https://chat-server--jajoosam.repl.co"
-
-export const adapter = socket(URL);
+const URL = config.get("url");
+const adapter = socket(URL);
+export { adapter };
