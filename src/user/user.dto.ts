@@ -1,7 +1,5 @@
 
-
-export class User{
-  id
+ export class CreateUserDTO {
   name: string;
   socketId: string;
 }
