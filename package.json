@@ -25,7 +25,7 @@
   "bugs": "https://github.com/rodcordeiro/chat.js/issues",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.0",
     "commander": "^10.0.0",
     "configstore": "^6.0.0",
     "dotenv": "^16.0.3",
