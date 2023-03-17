@@ -1,16 +1,20 @@
 {
   "name": "@rodcordeiro/chatjs",
-  "version": "1.0.0",
+  "version": "0.0.6",
   "description": "",
-  "main": "bin/src/index.js",
+  "main": "./src/index.js",
   "bin": {
-    "chatjs": "bin/src/index.js"
+    "chatjs": "./bin/src/index.js"
   },
   "files": [
-    "bin/**/*"
+    "bin/**/**"
   ],
   "scripts": {
     "start": "node bin/src/index.js",
+    "prebuild": "rimraf bin",
+    "postbuild": "npm run changelog",
+    "changelog": "auto-changelog -p",
+    "prepublishOnly": "npm run build",
     "build": "tsc -b",
     "dev": "tsx ./src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -40,7 +44,7 @@
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
     "@types/inquirer": "^9.0.3",
-    "@types/node": "^18.0.6",
+    "@types/node": "^18.15.3",
     "@types/ora": "^3.2.0",
     "@types/update-notifier": "^6.0.2",
     "@types/uuid": "^9.0.1",
