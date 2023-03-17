@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { program as cli } from "./utils/core";
 import UpdateNotifier from "update-notifier";
 import { info, color } from "./utils/logger";
