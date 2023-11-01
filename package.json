@@ -38,7 +38,7 @@
     "node-fetch": "^3.2.6",
     "ora": "^6.1.2",
     "socket.io-client": "^4.6.1",
-    "update-notifier": "^6.0.2",
+    "update-notifier": "^7.0.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
